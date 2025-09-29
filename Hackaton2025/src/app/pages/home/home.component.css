@@ -1,0 +1,14 @@
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #1B46FD, #75AAFF);
+    color: white;
+}
+h1{
+    
+}
+
