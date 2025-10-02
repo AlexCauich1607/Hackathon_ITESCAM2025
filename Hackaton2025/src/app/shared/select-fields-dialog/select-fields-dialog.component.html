@@ -1,0 +1,20 @@
+<h1 style="color: #2B53FD; text-align: center; font-size: 18px;">Selecciona las variables</h1>
+
+<div class="checkbox-list">
+  <div *ngFor="let campo of data.campos">
+    <label>
+      <input 
+        type="checkbox" 
+        [value]="campo" 
+        [checked]="camposSeleccionados.includes(campo)" 
+        (change)="toggleCampo($event)">
+      {{ campo }}
+    </label>
+  </div>
+</div>
+
+<div class="buttons">
+    <button (click)="guardar()" class="btn-blue"><i class="fas fa-save"></i> Guardar</button>
+  <button (click)="cancelar() " class="btn-white"><i class="fas fa-times"></i> Cancelar</button>
+  
+</div>

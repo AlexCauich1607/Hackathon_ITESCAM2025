@@ -1,14 +1,129 @@
 .home-container {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #1B46FD, #75AAFF);
-    color: white;
 }
-h1{
-    
+
+h1 {}
+
+.btn-left-rounded {
+    width: 60vh;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: #2B53FD;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: start;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+}
+
+.btn-right-rounded {
+    width: 40vh;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: #2B53FD;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: start;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+}
+
+.btn-blue {
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #2B53FD;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+}
+
+.btn-left-rounded:hover,
+.btn-right-rounded:hover {
+    background-color: #dbe8ff;
+}
+
+
+.btn-blue:hover {
+    background-color: #1235d6;
+}
+
+.btn-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cdk-overlay-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.mat-datepicker-content {
+  margin: 0 !important;
+}
+
+
+.calendar-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+
+/* Hereda todos los estilos del botón */
+.styled-date-input {
+  width: 40vh;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: #2B53FD;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: start;
+  box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+
+  /* Elimina bordes nativos */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Opcional: evita que sobresalga la flecha en Chrome */
+  background-image: none;
 }
 

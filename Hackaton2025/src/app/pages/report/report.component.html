@@ -1,0 +1,22 @@
+<div class="report-container">
+    <div class="div-left">
+        <h1 style="font-size: 26px; text-align: start; margin-left: 20px;"> <i class="fas fa-map-marker-alt"></i> Lat:
+            {{selectedPosition?.lat | number:'1.4-4'}}, Lng: {{selectedPosition?.lng | number:'1.4-4'}}</h1>
+        <p style="text-align: start; margin-left: 26px; margin-top: -10px;"><i class="fas fa-calendar-alt" (click)="abrirCalendario()"></i>
+            {{date}}</p>
+        <div class="div-buttons">
+            <button class="btn-white"  mat-raised-button color="primary" (click)="abrirSelector()"><i class="fas fa-sliders-h"></i> Ajustes</button>
+            <button class="btn-white"><i class="fas fa-upload"></i> Exportar</button>
+        </div>
+        
+        <div class="div-list">
+            <app-weather-message></app-weather-message>
+            <div class="grid-container">
+                <div class="div-element" *ngFor="let campo of camposSeleccionados">
+                    <p style="color: blue; font-size: 16px; font-weight: bold;">{{campo}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map" class="div-map"></div>
+</div>

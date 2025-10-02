@@ -1,0 +1,9 @@
+<div style="margin-left: 20px; margin-right: 20px;margin-top: 10px;">
+    <h1 style="font-size: 18px; color: #2B53FD; text-align: center;">Selecciona una fecha</h1>
+
+    <mat-calendar (selectedChange)="dateSelected($event)"></mat-calendar>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button class="btn-white" mat-button (click)="cancelar()" style="color: #2B53FD;"><i class="fas fa-times"></i> Cancelar</button>
+    </div>
+</div>

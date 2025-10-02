@@ -1,0 +1,13 @@
+.btn-blue {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 10px 40px;
+    border: none;
+    background-color: #2B53FD;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+}

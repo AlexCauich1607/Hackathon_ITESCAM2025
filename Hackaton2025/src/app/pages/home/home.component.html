@@ -1,4 +1,29 @@
 <div class="home-container">
     <h1>! Bienvenido a Weather Report !</h1>
-    <p style="margin-top: -15px;" >Ingrese sus datos para buscar</p>
+    <p style="margin-top:-15px;">Ingrese sus datos para buscar</p>
+
+    <div class="btn-container">
+
+        <button class="btn-left-rounded" (click)="openMap()">
+            <i class="fas fa-map-marker-alt"></i> {{locText}}
+        </button>
+
+
+        <button class="btn-right-rounded" (click)="abrirCalendario()"><mat-form-field
+                style="position:absolute; width:0; height:0; overflow:hidden; opacity:0;">
+                <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" (dateChange)="onDateChange($event)">
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <i class="fas fa-calendar-alt"></i> {{dateButtonText}}
+        </button>
+
+
+
+    </div>
+
+    <button class="btn-blue" (click)="goReport()">
+        <i class="fas fa-search"></i> Buscar
+    </button>
+
+
 </div>

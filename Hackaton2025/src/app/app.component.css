@@ -57,13 +57,8 @@ html, body {
     display: flex;
     flex-direction: column;
     height: 100%; /* Asegura que ocupe toda la pantalla */
-  
+    z-index: 1;  
   }
   
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-    
-  }
+  
   

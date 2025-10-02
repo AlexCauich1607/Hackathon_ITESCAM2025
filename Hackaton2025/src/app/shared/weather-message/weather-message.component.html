@@ -1,0 +1,14 @@
+<div class="pronostic-container" [ngStyle]="{'background': background [type],
+                 'background-size': 'cover',
+                 'background-position': 'center',
+                 'background-repeat': 'no-repeat'}">
+    <h1 style="font-size: 24px" [ngStyle]="{'color': colors[type]}">{{titulos[type]}}</h1>
+    <div class="div-container-row">
+        <div class="div-container-row-left">
+            <img class="image" [src]="imagenes[type]">
+        </div>
+        <div class="div-container-row-right">
+            <h1>{{descripcion[type]}}</h1>
+        </div>
+    </div>
+</div>

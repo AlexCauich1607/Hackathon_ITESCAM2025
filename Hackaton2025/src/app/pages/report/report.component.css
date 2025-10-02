@@ -1,0 +1,101 @@
+.report-container {
+    height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.div-left {
+    background-color: rgba(255, 255, 255, 0.114);
+    height: 100vh;
+    min-width: 35%;
+    backdrop-filter: blur(5px);
+}
+
+.div-map {
+    background-color: #AAD3DF;
+    height: 100vh;
+    min-width: 65%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* máximo 2 elementos por fila */
+    gap: 10px;
+    /* espacio entre elementos */
+    padding: 10px;
+    margin-left: 10px;
+    width: 91%;
+    margin-top: 10px;
+
+}
+
+.div-element {
+    background-color: white;
+    border-radius: 15px;
+    min-height: 27vh;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+}
+
+.div-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91%;
+    margin-left: 20px;
+    margin-top: -20px;
+    
+}
+
+.btn-white {
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: #2B53FD;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 6px rgba(0, 13, 155, 0.416);
+    margin-bottom: 5px;
+}
+
+.div-list {
+    padding-top: 15px;
+    width: 100%;
+    max-height: 75%;
+    overflow-y: auto;
+}
+
+.div-list::-webkit-scrollbar {
+    width: 8px;
+    /* ancho del scroll */
+}
+
+.div-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.114);
+    /* fondo del track */
+    border-radius: 10px;
+}
+
+.div-list::-webkit-scrollbar-thumb {
+    background: #2B53FD;
+    /* color del "thumb" */
+    border-radius: 10px;
+}
+
+.div-list::-webkit-scrollbar-thumb:hover {
+    background: #183bd7;
+    /* hover */
+}
+
+.fas.fa-calendar-alt:hover {
+  cursor: pointer;        /* cambia el cursor a mano */
+  color: #cdc7f8;         /* opcional: cambiar color al pasar el mouse */
+}
