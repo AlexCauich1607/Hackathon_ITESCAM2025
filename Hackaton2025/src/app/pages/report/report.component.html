@@ -6,14 +6,16 @@
             {{date}}</p>
         <div class="div-buttons">
             <button class="btn-white"  mat-raised-button color="primary" (click)="abrirSelector()"><i class="fas fa-sliders-h"></i> Ajustes</button>
-            <button class="btn-white"><i class="fas fa-upload"></i> Exportar</button>
+            <button class="btn-white" (click)="exportarExcel()"><i class="fas fa-upload"></i> Exportar</button>
         </div>
         
+        
         <div class="div-list">
-            <app-weather-message></app-weather-message>
+          
+            <app-weather-message [type]="num"></app-weather-message>
             <div class="grid-container">
-                <div class="div-element" *ngFor="let campo of camposSeleccionados">
-                    <p style="color: blue; font-size: 16px; font-weight: bold;">{{campo}}</p>
+                <div *ngFor="let campo of camposSeleccionados">
+                    <app-variable-container [title]="campo" [value]="getValor(campo)"></app-variable-container>
                 </div>
             </div>
         </div>

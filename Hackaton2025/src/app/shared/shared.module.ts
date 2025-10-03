@@ -24,11 +24,12 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+import { VariableContainerComponent } from './variable-container/variable-container.component';
 
 
 
 @NgModule({
-    declarations: [NavbarComponent, FooterComponent, MapDialogComponent, WeatherMessageComponent, SelectFieldsDialogComponent, CalendarDialogComponent
+    declarations: [NavbarComponent, FooterComponent, MapDialogComponent, WeatherMessageComponent, SelectFieldsDialogComponent, CalendarDialogComponent, VariableContainerComponent
     ],
     imports: [
         CommonModule,
@@ -50,7 +51,7 @@ import { MatNativeDateModule } from '@angular/material/core';
         MapDialogComponent,
         WeatherMessageComponent,
         SharedRoutingModule,
-        CalendarDialogComponent
+        CalendarDialogComponent, VariableContainerComponent
     ]
 })
 export class SharedModule { }
